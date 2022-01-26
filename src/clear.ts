@@ -7,10 +7,6 @@ const clear = async () => {
   await closeApps();
 };
 
-clear()
-  .then((output) => {
-    console.log(output);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+clear().catch((error) => {
+  console.error(error);
+});
